@@ -6,12 +6,11 @@ public class program3
     public static void main(String[] args)
     {
         System.out.println("Input the names ");
-        Scanner sc = new Scanner(System.in);
-        String[] array = new String[5];             // Declaration of stringarray        
-        Scanner s1 = new Scanner(System.in);
+        String[] array = new String[5];             // Declaration of string array      
+        Scanner sc = new Scanner(System.in);  
         for(int i=0; i<5; i++)
         {
-            array[i] = s1.nextLine();
+            array[i] = sc.nextLine();
         }
         Arrays.sort(array);
         System.out.print("Sorted list is: ");
