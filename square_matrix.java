@@ -1,6 +1,6 @@
 // Design a java code to accept a value for n and calculate the total number of all possible squares in a square matrix
 import java.util.*;
-public class program2
+public class square_matrix
 {
     public static void main(String[] args)
     {
