@@ -77,5 +77,3 @@ public class program1
     	Multiply(row1,col1,arr1,row2,col2,arr2);
 	}
 }
-
-// Design a java code to accept a value for n and calculate the btotal number of all possible squares in a square matrix
