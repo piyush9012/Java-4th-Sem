@@ -36,8 +36,7 @@ public class Matrix_multiply
         		for (k=0; k<row2; k++) 
         			arr3[i][j] += arr1[i][k] * arr2[k][j]; 
     		} 
-    	}   
-    	// Print the result
+    	}
     	System.out.println("\nResultant Matrix:"); 
         	printMatrix(arr3, row1, col2); 
     	}
