@@ -1,7 +1,7 @@
 // Design a java code to accept 5 strings from the user and print them in lexico graphical order
 
 import java.util.*;
-public class program3
+public class lemicographic
 {
     public static void main(String[] args)
     {
