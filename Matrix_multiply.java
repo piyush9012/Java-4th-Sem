@@ -1,5 +1,5 @@
 import java.util.*;
-public class program1
+public class Matrix_multiply
 {
 	static void printMatrix(int M[][], int rowSize, int colSize) 
     { 
