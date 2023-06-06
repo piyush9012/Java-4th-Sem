@@ -15,7 +15,7 @@ public class password_generator
         ph = sc.nextLong();
         System.out.println("Enter the Name");
         name = sc.next();
-        char []sym = { ')','@','#','$','%','^','!','&','(','*','~'};
+        char []sym = { ')','@','#','$','%','^','!','&','(','*'};
         do
         {
             while(rno != 0)
@@ -32,15 +32,7 @@ public class password_generator
         }while(rno!= 0);
         int c = rno1/100;
         int len = name.length();
-        int pos = 0;
-        for (int i = 0; i < len; i++)
-        {
-            if(c == i)
-            {
-                pos = i;
-                System.out.println("Password is: ");
-            }    
-        }
+        System.out.println("Password is: ");
         pw = ""+name.charAt(0)+(ph%10)+sum+sym[c]+name.charAt(len-1);
         System.out.println(pw);
     }
