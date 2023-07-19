@@ -24,34 +24,34 @@ public class MinMax {
     }
 
     public int minNode() { // Find the minimum node
-        Node current = head;
+        Node temp = head;
         int min;
         if (head == null) {
             System.out.println("List is empty");
             return 0;
         } else {
             min = head.data;
-            while (current != null) {
-                if (min > current.data)
-                    min = current.data;
-                current = current.next;
+            while (temp != null) {
+                if (min > temp.data)
+                    min = temp.data;
+                temp = temp.next;
             }
         }
         return min;
     }
 
     public int maxNode() { // Find the maximum node
-        Node current = head;
+        Node temp = head;
         int max;
         if (head == null) {
             System.out.println("List is empty");
             return 0;
         } else {
             max = head.data;
-            while (current != null) {
-                if (current.data > max)
-                    max = current.data;
-                current = current.next;
+            while (temp != null) {
+                if (temp.data > max)
+                    max = temp.data;
+                temp = temp.next;
             }
         }
         return max;
