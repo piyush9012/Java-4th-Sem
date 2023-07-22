@@ -1,20 +1,17 @@
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.awt.*;
+import java.awt.event.*;
+import java.io.*;
 import javax.swing.*;
 
 public class EmployeeFile {
     private static Color black;
     public static void main(String[] args) {
+
         JFrame frameobj = new JFrame(); // creating frame
         frameobj.setSize(500, 500); // declaring frame size
         GridLayout g1 = new GridLayout(5, 2); // layout of the frame
         frameobj.setLayout(g1); // layout is set to the frame created
+
         JPanel p1 = new JPanel(); // creating panels
         JPanel p2 = new JPanel();
         JPanel p3 = new JPanel();
@@ -25,26 +22,28 @@ public class EmployeeFile {
         JPanel p8 = new JPanel();
         JPanel p9 = new JPanel();
         JPanel p10 = new JPanel();
+
         JLabel l1 = new JLabel("NAME"); // creating labels
         JLabel l2 = new JLabel("ID");
         JLabel l3 = new JLabel("DOJ");
         JLabel l4 = new JLabel("DOB");
+
         JTextField f1 = new JTextField(); // create obj for txtfield
         JTextField f2 = new JTextField();
         JTextField f3 = new JTextField();
         JTextField f4 = new JTextField();
+
         f1.setPreferredSize(new Dimension(200, 30)); // size of txtfield
         f2.setPreferredSize(new Dimension(200, 30));
-
         f3.setPreferredSize(new Dimension(200, 30));
         f4.setPreferredSize(new Dimension(200, 30));
+
         JButton b1 = new JButton("SUBMIT");
         JButton b2 = new JButton("RESET");
         b1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                File fileobj = new File("/home/student/Desktop/file.txt");
-
+                File fileobj = new File("C:\\Users\\Piyush Narayan\\OneDrive\\Desktop\file.txt");
                 try {
                     FileWriter fw = new FileWriter(fileobj.getAbsoluteFile(), true);
                     System.out.println("\nNAME: "+f1.getText()+"\n"+"ID : "+f2.getText()+"\n"+"DOJ:"+f3.getText()+"\n"+"DOB"+f4.getText()+"\n");
