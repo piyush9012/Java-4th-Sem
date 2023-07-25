@@ -3,11 +3,11 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class TicTacToe extends JFrame implements ActionListener {
+public class TicTactoe extends JFrame implements ActionListener {
     JButton[][] buttons = new JButton[3][3];
     boolean xTurn = true;
 
-    public TicTacToe() {
+    public TicTactoe() {
         setTitle("Tic Tac Toe");
         setSize(300, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -78,6 +78,6 @@ public class TicTacToe extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new TicTacToe();
+        new TicTactoe();
     }
 }
